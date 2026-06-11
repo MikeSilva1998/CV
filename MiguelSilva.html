@@ -39,7 +39,7 @@ section{padding:60px 2rem 35px;max-width:920px;margin:0 auto}
 #hero{display:flex;flex-direction:column;justify-content:center;min-height:100vh;padding-top:60px}
 .hero-inner{display:flex;align-items:center;gap:2.5rem}
 .hero-content{flex:1;min-width:0;position:relative}
-.hero-photo-wrap{position:absolute;right:0px;top:5%;transform:translateY(-50%);width:300px;height:300px;border-radius:50%;overflow:hidden;border:2px solid var(--c);box-shadow:0 0 30px var(--cdim);opacity:0;animation:fu .8s ease forwards .3s}
+.hero-photo-wrap{position:absolute;right:5px;top:2%;transform:translateY(-50%);width:350px;height:350px;border-radius:50%;overflow:hidden;border:2px solid var(--c);box-shadow:0 0 30px var(--cdim);opacity:0;animation:fu .8s ease forwards .3s}
 .hero-photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
 .htag{font-size:.72rem;letter-spacing:4px;text-transform:uppercase;color:var(--c);margin-bottom:1rem;opacity:0;animation:fu .8s ease forwards .2s}
 .hname{font-size:clamp(2.2rem,6vw,4.5rem);font-weight:700;line-height:1.05;letter-spacing:-1px;opacity:0;animation:fu .8s ease forwards .4s}
@@ -193,7 +193,7 @@ footer{text-align:center;padding:2rem;color:var(--g);font-size:.78rem;border-top
 <nav>
   <div class="nlogo-wrap">
     <!--<img class="nlogo-img" src="https://img.itch.zone/aW1nLzQyNDgxNzYucG5n/35x35%23/dC%2B8D9.png" alt="Logo"
-         onload="this.style.display='block';document.querySelector('.nlogo').style.display='none'">-->
+         onload="this.style.display='block';document.querySelector('.nlogo').style.display='none'"> -->
     <span class="nlogo">MASS</span>
   </div>
   <ul class="nlinks" id="nlinks">
@@ -217,14 +217,18 @@ footer{text-align:center;padding:2rem;color:var(--g);font-size:.78rem;border-top
   <div class="hero-content">
       <h1 class="hname">Miguel Angel<br><span>Silva Soto</span></h1>
       <div class="hero-photo-wrap">
-      <img id="profile-photo" src="https://scontent-qro3-1.xx.fbcdn.net/v/t39.30808-6/719940527_122237525762093815_8073804217770015572_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1179x1179&ctp=s1179x1179&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xJcmW22ParYQ7kNvwGwOb3Q&_nc_oc=AdpavxHpnpFOEMn2fD8tyifRsIds-MUfyfYohaK8j_WAjYykO17WSAIZubNZTrgAD1q7d0g-izK9Z2BciGpjZ70q&_nc_zt=23&_nc_ht=scontent-qro3-1.xx&_nc_gid=76U2BCB7mQmft-Jcuny73g&_nc_ss=7b2a8&oh=00_Af_r5arY7NhwRi_uPgkGvX3i0c_6Vk48_WsFEAUsRRXOTQ&oe=6A301C1F" alt="Miguel Angel Silva Soto" onerror="this.style.display='none'">
+      <img id="profile-photo" src="https://scontent-qro1-2.xx.fbcdn.net/v/t39.30808-6/723040837_122237574152093815_5891273557581984679_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s1024x1024&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l7_Q37OFvUYQ7kNvwEHZbFS&_nc_oc=AdoBOE_cZIita31Bm8CW3z3obA8iD7VOwvVHVYm7eU9t5ux83W8VcE2Wsfb5T_KQ2ZOsvcDGLOwMceba_cNGv2yf&_nc_zt=23&_nc_ht=scontent-qro1-2.xx&_nc_gid=LSYARcg_-hj7fe_rvu_1dw&_nc_ss=7b2a8&oh=00_Af9_vPYvnCZGHAQi8kSJI7BNrbuNhnMfRQY8vh9llguZBQ&oe=6A3092B9" alt="Miguel Angel Silva Soto" onerror="this.style.display='none'">
     </div>
       <div class="hroles">
         <div><span class="rchip" data-disc="all">Interactive Visual Artist</span></div>
       </div>
       <div class="hroles">
-        <span class="rchip" data-disc="3d">3D Artist & Rendering</span>
-        <span class="rchip" data-disc="uxui">2D Artist & UI/UX</span>
+        <div><span class="rchip" data-disc="3d">3D Artist & Rendering</span></div>
+      </div>
+      <div class="hroles">
+        <div><span class="rchip" data-disc="uxui">2D Artist & UI/UX</span></div>
+        
+        
         <span class="rchip" data-disc="qa">QA / TESTING</span>
       </div>
       <p class="hdesc" id="hero-desc"></p>
@@ -388,7 +392,7 @@ const D={
     ],
     skillType:'bars',
     skills:[
-      {t:'3D Artist & Rendering',i:[{n:'Rendering',p:80},{n:'Modelado 3D',p:85},{n:'Props',p:80},{n:'Fotogrametría',p:75},{n:'Environment',p:75},{n:'Animación 3D',p:70},{n:'Motion Graphics',p:50}]},
+      {t:'3D Artist & Rendering',i:[{n:'Rendering',p:85},{n:'Modelado 3D',p:80},{n:'Props',p:80},{n:'Fotogrametría',p:75},{n:'Environment',p:75},{n:'Animación 3D',p:70},{n:'Motion Graphics',p:50}]},
       {t:'2D Artist & UI / UX',i:[{n:'Vectorización',p:100},{n:'UI Design',p:90},{n:'UX Design',p:85},{n:'Props 2D',p:80},{n:'Animación 2D',p:70},{n:'Concept Art',p:50},{n:'Ilustración',p:40}]},
       {t:'QA / Testing',i:[{n:'Documentación',p:95},{n:'Pensamiento analítico',p:85},{n:'Detección de errores',p:80},{n:'Validación funcional',p:75}]},
     ],
