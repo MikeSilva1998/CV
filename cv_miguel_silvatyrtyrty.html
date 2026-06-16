@@ -144,7 +144,11 @@ body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--w);
 
 /* ── MOBILE ── */
 @media(max-width:1080px){
-  .cv-page{margin:.5rem;max-width:100%}
+  .cv-page{width:100%;
+    max-width:none;
+    margin:1;
+    padding:1rem;
+    box-sizing:border-box;}
   /*.cv-wrap{grid-template-columns:1fr}*/
   .cv-sidebar{position:static;max-height:none;overflow-y:visible;border-right:none;border-bottom:1px solid var(--cardbdr);padding:1.1rem}
   .sb-photo{width:100px;height:100px;float:left;margin-right:1rem;aspect-ratio:1}
@@ -153,6 +157,7 @@ body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--w);
   .big-name{font-size:2rem}
   .stats-row{grid-template-columns:repeat(2,1fr)}
   .sgrid{grid-template-columns:1fr}
+ 
 }
 @media(max-width:480px){.big-name{font-size:1.75rem}.hero-card{padding:1.1rem}}
 
