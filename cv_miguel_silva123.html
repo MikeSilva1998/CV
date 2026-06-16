@@ -138,18 +138,20 @@ body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--w);
 @media(max-width:1080px){
   body{overflow-x:hidden}
   body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--w);overflow-x:hidden}
-  /*.stats-row{grid-template-columns:repeat(2,2fr)} 
-  /* .sgrid{grid-template-columns:1fr} */
   .cv-main{padding:1rem 0 0 1rem;min-height:100vh}
   .cv-page{margin:.25rem auto;border-radius:6px; padding:.2px 25px 1px 25px;}
-  /*.cv-wrap{grid-template-columns:28% 72%;}*/
   .tool-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:.28rem}
   .sb-icon{width:50px;height:50px;border:1px solid var(--cardbdr);border-radius:5px;display:flex;align-items:center;justify-content:center;color:var(--g);text-decoration:none;transition:all .2s;background:rgba(0,212,255,.02);flex-shrink:4}
   .sb-icon:hover{border-color:var(--c);color:var(--c);box-shadow:0 0 8px var(--cdim)}
   .sb-icon svg,.sb-icon img{width:25px;height:25px;object-fit:contain}
-  .rchip{padding:.25rem .65rem;border:1px solid var(--bdr);border-radius:3px;font-size:.60rem;letter-spacing:1px;text-transform:uppercase;color:var(--c);background:var(--cdim);transition:all .18s;user-select:none}
+  .rchip{padding:.25rem .65rem;border:1px solid var(--bdr);border-radius:3px;font-size:.57rem;letter-spacing:1px;text-transform:uppercase;color:var(--c);background:var(--cdim);transition:all .18s;user-select:none}
 
-  
+  .hero-card{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.6rem .0rem .6rem .8rem;margin-bottom:1.4rem}
+  .mc-card{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.7rem .8rem .7rem .8rem}
+  .job-card{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.7rem .6rem .6rem .8rem;margin-bottom:.75rem;transition:border-color .22s}
+  .skcol{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.7rem .7rem .1rem .7rem;transition:border-color .25s}
+  .edu-card{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.7rem .6rem .7rem .8rem}
+  .ref-card{background:var(--card);border:1px solid var(--cardbdr);border-radius:6px;padding:.5rem .6rem .4rem .8rem;transition:border-color .22s}
 }
 /* JS aplica zoom para escalar manteniendo el layout */
 /* No se cambia grid-template-columns — se conservan dos columnas */
