@@ -137,16 +137,14 @@ body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--w);
 /* ── MOBILE: Se mantienen las dos columnas, JS aplica zoom ── */
 @media(max-width:1080px){
   body{overflow-x:hidden}
+
   .stats-row{grid-template-columns:repeat(1,1fr)} 
   /* .sgrid{grid-template-columns:1fr} */
-  .cv-page{
-    margin:.25rem auto;
-    border-radius:6px;
-    
-    /* JS aplica zoom para escalar manteniendo el layout */
-  }
-  /* No se cambia grid-template-columns — se conservan dos columnas */
+  .cv-page{margin:.25rem auto;border-radius:6px;}
+  .cv-wrap{grid-template-columns:180px 1fr;gap:12px;}
 }
+/* JS aplica zoom para escalar manteniendo el layout */
+/* No se cambia grid-template-columns — se conservan dos columnas */
 
 /* ── PRINT: Solo blanco y negro ── */
 #print-cv{display:none}
